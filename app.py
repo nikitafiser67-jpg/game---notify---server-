@@ -4,11 +4,11 @@ import os
 
 app = Flask(__name__)
 
-# ⚠️ ЗАМЕНИ НА СВОИ ЗНАЧЕНИЯ
-BOT_TOKEN = os.environ.get('BOT_TOKEN', 'ТВОЙ_ТОКЕН_БОТА')
-CHANNEL_LINK = os.environ.get('CHANNEL_LINK', 'https://t.me/твой_канал')
-CHANNEL_NAME = os.environ.get('CHANNEL_NAME', 'Название канала')
-CHAT_ID = os.environ.get('CHAT_ID', '5988591918')  # твой Chat ID для уведомлений
+# ================= НАСТРОЙКИ =================
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8761738558:AAFV3UAKKh1gymucq6P9fwzopgd4QIljmtE')
+CHANNEL_LINK = 'https://t.me/OxideDropchik'
+CHANNEL_NAME = 'Oxide Drop'
+CHAT_ID = os.environ.get('CHAT_ID', '5988591918')
 
 # ================= ОТПРАВКА СООБЩЕНИЙ =================
 def send_message(chat_id, text, reply_markup=None):
